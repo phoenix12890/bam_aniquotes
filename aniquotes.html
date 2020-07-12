@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<link rel="stylesheet" href="style.css">-->
+  <link rel="stylesheet" href="css.css">
+  <link rel="icon" href="bam_circle.png" sizes="16x16">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>BAM: Aniquotes</title>
+  <style>
+	ul {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: #f1f1f1;
+	}
+
+	li {
+	  float: left;
+	}
+
+	li a {
+	  display: block;
+	  color: #000;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+
+	li a:hover {
+	  background-color: rgba(0,0,0,0.2);
+	}
+	
+	.col2 img{
+		width:96%;
+		margin:2%;
+	}
+	.col1 img{
+		width:100%;
+	}
+	
+	header a{
+		text-decoration:none;
+	}
+	a:link{
+		color: #000;
+	}
+
+	a:visited {
+		color: #000;
+	}
+
+	a:hover {
+		color: rgba(0,0,0,0.45);
+	}
+	
+	body,h1 {font-family: "Montserrat", sans-serif;color:#656565;}
+	img {margin-bottom: -7px}
+	
+  </style>
+</head>
+<body>
+	<ul>
+	  <li><a class="active" href="#home">Home</a></li>
+	  <!--<li><a href="#news">News</a></li>
+	  <li><a href="#contact">Contact</a></li>-->
+	  <li><a href="comingSoon.html" target="_self">About</a></li>
+	</ul>
+	
+	<!--<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+	  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+		<i class="fa fa-remove"></i>
+	  </a>
+	  <div class="w3-bar-block w3-center">
+		<a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+		<a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a>
+		<a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Shop</a>
+		<a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+	  </div>
+	</nav>-->
+	
+	<!--<script>document.write("Hello, World!")</script>-->
+	
+	<!-- !PAGE CONTENT! -->
+	<div class="w3-content content" style="max-width:1500px">
+
+	<!-- Header -->
+	<!--<div class="w3-opacity">
+	<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+	<div class="w3-clear"></div>-->
+	<header>
+	  <h1><b>ANIQUOTES<!--PHOTOLIO--></b></h1>
+	  <p><b>An under-construction template by BAM designs.</b></p>
+	  <p>Quotes and posts by <a href="https://www.instagram.com/12walker21/" target="_blank">@12walker21</a> (Instagram link below)</p>
+	  <p><button class="button" onclick="myFunction()">Toggle View</button></p>
+	</header>
+	</div>
+
+	<!-- Photo Grid -->
+	<div class="col" style="margin-bottom:128px">
+	  <div class="col1" id="myGrid" >
+		<img src="5.jpg">
+		<img src="8.jpg">
+		<img src="7.jpg">
+		<img src="11.jpg">
+		<img src="4.jpg">
+		<img src="13.jpg">
+		<img src="17.jpg">
+		
+	  </div>
+
+	  <div class="col1" id="myGrid2" >
+		<img src="3.jpg">
+		<img src="10.jpg">
+		<img src="12.jpg">
+		<img src="2.jpg">
+		<img src="5.jpg">
+		<img src="1.jpg">
+	  </div>
+
+	  <div class="col1" id="myGrid3" >
+		<img src="14.jpg">
+		<img src="6.jpg">
+		<img src="15.jpg">
+		<img src="9.jpg">
+		<img src="16.jpg">
+	  </div>
+	</div>
+
+	<!-- End Page Content -->
+	</div>
+	<p> &nbsp </p>
+	
+	<!-- Footer -->
+	<div>
+	<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge footer bottom"> 
+	  <!--<a href="#" style="font-size:25px;"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>-->
+	  <a href="https://www.instagram.com/12walker21/" target="_blank" style="font-size:25px;"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+	  <a href="#" style="font-size:25px;"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+	  <!--<a href="#" style="font-size:25px;"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+	  <a href="#" style="font-size:25px;"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+	  <a href="#" style="font-size:25px;"><i class="fa fa-linkedin w3-hover-opacity"></i></a>-->
+	  <p class="w3-medium">Powered by <a href="me.css.html" target="_blank" class="w3-hover-text-green">bam.css</a></p>
+	</footer>
+	</div>
+	 
+	<script>
+	// Toggle grid padding
+	function myFunction() {
+	  var x = document.getElementById("myGrid");
+	  if (x.className === "col1") {
+		x.className = "col2";
+	  } else { 
+		x.className = x.className.replace("col2", "col1");
+	  }
+	  var x = document.getElementById("myGrid2");
+	  if (x.className === "col1") {
+		x.className = "col2";
+	  } else { 
+		x.className = x.className.replace("col2", "col1");
+	  }
+	  var x = document.getElementById("myGrid3");
+	  if (x.className === "col1") {
+		x.className = "col2";
+	  } else { 
+		x.className = x.className.replace("col2", "col1");
+	  }
+	}
+	</script>
+</body>
+</html>
